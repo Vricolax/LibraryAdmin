@@ -1,0 +1,42 @@
+Database scheme
+---------------
+
+customers
+	customer id (pk)
+	first name 
+	last name 
+	
+books
+	book id (pk)
+	book title (unique)
+	author name
+	category (fk)
+	status
+
+book-categories
+	category name (pk)
+	
+reservations
+	customer id (fk)
+	book id (fk)
+	reservation date
+	restoration date
+	
+orders
+	customer id (fk)
+	book amount
+	
+employees
+	employee id
+	first name
+	last name
+		
+partners
+	partner id (pk)	
+	partner name
+	location
+
+partners-orders
+	id (pk)
+	partner id (fk)
+	partner order
